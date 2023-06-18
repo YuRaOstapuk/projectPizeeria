@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 
 module.exports = {
@@ -16,8 +17,9 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             inject: 'body',
-            template: 'public/index.html'
-        })
+            template: './src/index.html'
+        }),
+        new CleanWebpackPlugin()
     ],
     module: {
         rules: [
@@ -26,12 +28,39 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             }, 
             {
-                test: /\.scss/i,
+                test: /\.s[ac]ss$/i,
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(png|svg|jpg|gif)$/i,
-                use: ['file-loader']
+                use: 
+                {
+                    loader: 'file-loader',
+                    options:
+                    {
+                        name: '[name].[ext]',
+                        publicPath: './src/assets/',
+                        outputPath: 'assets'
+                    }
+                }
+            
+            },
+
+            {
+                test: /\.ttf$/i,
+                use: 
+                [
+                    {
+                        loader: 'file-loader',
+                        //type: 'asset/resource',
+                        options:
+                        {
+                            name: '[name].[ext]',
+                            publicPath: './src/assets/fonts',
+                            outputPath: 'assets/fonts'
+                        }
+                    }
+                ]
             }
         ]
     }
