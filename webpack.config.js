@@ -33,15 +33,34 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/i,
-                use: {
+                use: 
+                {
                     loader: 'file-loader',
-                    options: {
+                    options:
+                    {
                         name: '[name].[ext]',
                         publicPath: './src/assets/',
                         outputPath: 'assets'
                     }
                 }
             
+            },
+
+            {
+                test: /\.ttf$/i,
+                use: 
+                [
+                    {
+                        loader: 'file-loader',
+                        //type: 'asset/resource',
+                        options:
+                        {
+                            name: '[name].[ext]',
+                            publicPath: './src/assets/fonts',
+                            outputPath: 'assets/fonts'
+                        }
+                    }
+                ]
             }
         ]
     }

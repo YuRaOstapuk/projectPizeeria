@@ -1,15 +1,27 @@
-.mainHeader {
-    font-size: 36px;
 
-}
+$blue: rgba(62, 26, 120, 1);
+
+$sandy: rgba(255, 233, 166, 1);
+
+$white: rgba(255, 255, 255, 1);
+
+$golden-sandy: rgba(255, 193, 0, 1);
+
+$red: rgba(255, 0, 0, 1);
+
+$transparent: rgba(255, 255, 255, 0.7);
 
 .wrapper {
-    width: 90%;
-    margin: 0 auto;
-    background-color: rgba(255, 233, 166, 1);
-}
-
-.logo {
-    height: 130px;
+    width: 80vw;
+    height: 100vh;
+    background-color: $sandy;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    z-index: 1;
 }
 

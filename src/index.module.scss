@@ -1,15 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @import "./styles/main.module.scss";
 
-// $font-family: 'Roboto', sans-serif;
+@import "./styles/roboto.scss";
+
+@import "./styles/orderArea.module.scss";
+
+@import "./styles/mainContent.module.scss";
+
+@import "./styles/ingredients.module.scss";
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
   }
 
 
-
-.image {
-    height: 200px;
-}
