@@ -1,4 +1,3 @@
-
 @import "./styles/main.module.scss";
 
 @import "./styles/roboto.scss";
@@ -9,11 +8,6 @@
 
 @import "./styles/ingredients.module.scss";
 
-
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -22,8 +16,6 @@
 
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
-  }
-
-
+}

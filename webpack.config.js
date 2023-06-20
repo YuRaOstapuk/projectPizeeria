@@ -52,7 +52,6 @@ module.exports = {
                 [
                     {
                         loader: 'file-loader',
-                        //type: 'asset/resource',
                         options:
                         {
                             name: '[name].[ext]',
