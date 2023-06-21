@@ -32,6 +32,7 @@ addClassById("headerColorizer", styles.headerColorizer);
 addClassById("buttonText", styles.buttonText);
 addClassById("orderListWrapper", styles.orderListWrapper);
 addClassById("orderAreaBg", styles.orderAreaBg);
+addClassById("modal", styles.modal);
 
 addClassByClassName("orderedItems", styles.orderedItems);
 addClassByClassName("ingredientsTitles", styles.ingredientsTitles);
