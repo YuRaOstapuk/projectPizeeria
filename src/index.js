@@ -4,6 +4,8 @@ import image from "./assets/pizzaLab_image.png";
 import addClassById from "./modules/addClassById";
 import addClassByClassName from "./modules/addClassByClassName.js";
 import * as font from "./assets/fonts/Roboto-Black.ttf";
+import { showPizzaSlice } from "./modules/showPizzaSlice";
+
 
 addClassById("wrapper", styles.wrapper);
 addClassById("main", styles.main);
@@ -42,3 +44,6 @@ addClassByClassName("ingredients", styles.ingredients);
 addClassByClassName("ingredientsBlock", styles.ingredientsBlock);
 addClassByClassName("indicators", styles.indicators);
 addClassByClassName("indicatorBg", styles.indicatorBg);
+
+
+showPizzaSlice();
