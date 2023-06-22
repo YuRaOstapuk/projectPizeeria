@@ -1,9 +1,15 @@
 import styles from "./index.module.scss";
-import logo from "./assets/pizzaLab_logo.png";
-import image from "./assets/pizzaLab_image.png";
+import logoImage from "./assets/pizzaLab_logo.png";
+import image1  from "./assets/pizzaTopLeft.png";
+import image2 from "./assets/pizzaTopRight.png";
+import image3 from "./assets/pizzaBottomLeft.png";
+import image4 from "./assets/pizzaBottomRight.png";
 import addClassById from "./modules/addClassById";
 import addClassByClassName from "./modules/addClassByClassName.js";
-import * as font from "./assets/fonts/Roboto-Black.ttf";
+import fontBlack from "./assets/fonts/Roboto-Black.ttf";
+
+import { showPizzaSlice } from "./modules/showPizzaSlice";
+
 
 addClassById("wrapper", styles.wrapper);
 addClassById("main", styles.main);
@@ -17,12 +23,10 @@ addClassById("priceValue", styles.priceValue);
 addClassById("mainImage", styles.mainImage);
 addClassById("mainContent", styles.mainContent);
 addClassById("mainHeader", styles.mainHeader);
-addClassById("coverBlocksWrapper", styles.coverBlocksWrapper);
-addClassById("coverBlock1", styles.coverBlock1);
-addClassById("coverBlock2", styles.coverBlock2);
-addClassById("coverBlock3", styles.coverBlock3);
-addClassById("coverBlock4", styles.coverBlock4);
-addClassById("image", styles.image);
+addClassById("imageBlock1", styles.imageBlock1);
+addClassById("imageBlock2", styles.imageBlock2);
+addClassById("imageBlock3", styles.imageBlock3);
+addClassById("imageBlock4", styles.imageBlock4);
 addClassById("orderButton", styles.orderButton);
 addClassById("orderButtonBg", styles.orderButtonBg);
 addClassById("ingredientsArea", styles.ingredientsArea);
@@ -42,3 +46,21 @@ addClassByClassName("ingredients", styles.ingredients);
 addClassByClassName("ingredientsBlock", styles.ingredientsBlock);
 addClassByClassName("indicators", styles.indicators);
 addClassByClassName("indicatorBg", styles.indicatorBg);
+
+
+imageBlock1.style.backgroundImage = image1;
+imageBlock1.setAttribute('style', `background-image: url(${image1})`);
+
+imageBlock2.style.backgroundImage = image2;
+imageBlock2.setAttribute('style', `background-image: url(${image2})`);
+
+imageBlock3.style.backgroundImage = image3;
+imageBlock3.setAttribute('style', `background-image: url(${image3})`);
+
+imageBlock4.style.backgroundImage = image4;
+imageBlock4.setAttribute('style', `background-image: url(${image4})`);
+
+logo.setAttribute('src', logoImage);
+
+
+showPizzaSlice();

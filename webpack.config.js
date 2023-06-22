@@ -33,13 +33,7 @@ module.exports = {
                 test: /\.(png|svg|jpg|gif)$/i,
                 use: 
                 {
-                    loader: 'file-loader',
-                    options:
-                    {
-                        name: '[name].[ext]',
-                        publicPath: './src/assets/',
-                        outputPath: 'assets'
-                    }
+                    loader: 'file-loader'
                 }
             
             },
@@ -50,12 +44,6 @@ module.exports = {
                 [
                     {
                         loader: 'file-loader',
-                        options:
-                        {
-                            name: '[name].[ext]',
-                            publicPath: './src/assets/fonts',
-                            outputPath: 'assets/fonts'
-                        }
                     }
                 ]
             }

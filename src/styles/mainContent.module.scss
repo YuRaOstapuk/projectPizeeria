@@ -1,3 +1,9 @@
+.bg-default{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.3;
+}
 .main {
   height: 540px;
   width: 80%;
@@ -29,18 +35,39 @@
 }
 .mainImage {
   width: 230px;
-  aspect-ratio: 1;
-  position: relative;
+  height: 230px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 100%;
+  transform: rotate(16deg);
 }
-.image {
-  width: 230px;
-  aspect-ratio: 1;
+.imageBlock1 {
+  @extend .bg-default;
+  border-top-left-radius: 100%;
+  transform: translate(0.2px, 0.2px);
+}
+.imageBlock2 {
+  @extend .bg-default;
+  border-top-right-radius: 100%;
+  transform: translate(-0.2px, 0.5px);
+}
+.imageBlock3 {
+  @extend .bg-default;
+  border-bottom-left-radius: 100%;
+  transform: translate(0.2px, -0.2px);
+}
+.imageBlock4 {
+  @extend .bg-default;
+  border-bottom-right-radius: 100%;
+  transform: translate(-0.45px, -0.25px);
 }
 .orderButton {
   width: 55%;
   height: 60px;
   border: 5px solid $blue;
   align-content: center;
+  opacity: 0.3;
 }
 .orderButtonBg {
   display: flex;
@@ -57,31 +84,4 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-.coverBlocksWrapper {
-  width: 230px;
-  aspect-ratio: 1;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  border-radius: 45%;
-  transform: rotate(15.5deg);
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-.coverBlock1 {
-  border-radius: 100% 0 0 0;
-  background-color: $transparent;
-}
-.coverBlock2 {
-  border-radius: 0 100% 0 0;
-  background-color: $transparent;
-}
-.coverBlock3 {
-  border-radius: 0 0 0 100%;
-  background-color: $transparent;
-}
-.coverBlock4 {
-  border-radius: 0 0 100% 0;
-  background-color: $transparent;
-}
+
