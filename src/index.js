@@ -4,7 +4,7 @@ import image from "./assets/pizzaLab_image.png";
 import addClassById from "./modules/addClassById";
 import addClassByClassName from "./modules/addClassByClassName.js";
 import * as font from "./assets/fonts/Roboto-Black.ttf";
-import orderList from "./orderAreaAddIngrediens/addIngrediens";
+
 addClassById("wrapper", styles.wrapper);
 addClassById("main", styles.main);
 addClassById("orderArea", styles.orderArea);
@@ -32,6 +32,7 @@ addClassById("headerColorizer", styles.headerColorizer);
 addClassById("buttonText", styles.buttonText);
 addClassById("orderListWrapper", styles.orderListWrapper);
 addClassById("orderAreaBg", styles.orderAreaBg);
+addClassById("modal", styles.modal);
 
 addClassByClassName("orderedItems", styles.orderedItems);
 addClassByClassName("ingredientsTitles", styles.ingredientsTitles);
