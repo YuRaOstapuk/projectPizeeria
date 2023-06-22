@@ -1,21 +1,20 @@
 
 export function showPizzaSlice() {
-    const coverBlocks = [
-      document.getElementById("coverBlock1"),
-      document.getElementById("coverBlock2"),
-      document.getElementById("coverBlock4"),
-      document.getElementById("coverBlock3")
-    ];
-  
-    const ingredientsLists = document.querySelectorAll(".ingredientsLists");
-  
-    ingredientsLists.forEach((list, index) => {
-      list.addEventListener("click", function (event) {
-        const clickedItem = event.target.closest("li");
-        if (clickedItem) {
-          coverBlocks[index].style.opacity = "0";
-        }
-      });
+  const imageBlocks = [
+    document.getElementById("imageBlock1"),
+    document.getElementById("imageBlock2"),
+    document.getElementById("imageBlock4"),
+    document.getElementById("imageBlock3")
+  ];
+
+  const ingredientsLists = document.querySelectorAll(".ingredientsLists");
+
+  ingredientsLists.forEach((list, index) => {
+    list.addEventListener("click", function (event) {
+      const clickedItem = event.target.closest("li");
+      if (clickedItem) {
+        imageBlocks[index].style.opacity = "1";
+      }
     });
-  }
-  
+  });
+}
