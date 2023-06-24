@@ -1,5 +1,4 @@
-
-export function showPizzaSlice() {
+export function showPizzaSlice(allSelectedItems) {
   const imageBlocks = [
     document.getElementById("imageBlock1"),
     document.getElementById("imageBlock2"),
@@ -7,14 +6,7 @@ export function showPizzaSlice() {
     document.getElementById("imageBlock3")
   ];
 
-  const ingredientsLists = document.querySelectorAll(".ingredientsLists");
-
-  ingredientsLists.forEach((list, index) => {
-    list.addEventListener("click", function (event) {
-      const clickedItem = event.target.closest("li");
-      if (clickedItem) {
-        imageBlocks[index].style.opacity = "1";
-      }
-    });
-  });
+  for (let i=0; i < 4; i++) {
+    imageBlocks[i].style.opacity = allSelectedItems[i].length === 0 ? 0.3 : 1;
+  }
 }
