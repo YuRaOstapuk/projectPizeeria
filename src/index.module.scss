@@ -2,10 +2,10 @@
 
 @import "./styles/roboto.scss";
 
-@import "./styles/orderArea.module.scss";
+@import "./modules/orderArea/orderArea.module.scss";
 
-@import "./styles/mainContent.module.scss";
+@import "./modules/pizzaImage/mainContent.module.scss";
 
-@import "./styles/ingredients.module.scss";
+@import "./modules/ingredientLists/ingredients.module.scss";
 
 

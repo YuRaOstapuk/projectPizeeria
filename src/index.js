@@ -4,11 +4,12 @@ import image1  from "./assets/pizzaTopLeft.png";
 import image2 from "./assets/pizzaTopRight.png";
 import image3 from "./assets/pizzaBottomLeft.png";
 import image4 from "./assets/pizzaBottomRight.png";
-import addClassById from "./modules/addClassById";
-import addClassByClassName from "./modules/addClassByClassName.js";
+import addClassById from "./modules/addingClasses/addClassById";
+import addClassByClassName from "./modules/addingClasses/addClassByClassName.js";
 import fontBlack from "./assets/fonts/Roboto-Black.ttf";
 
-import { showPizzaSlice } from "./modules/showPizzaSlice";
+import { addIngredientsToOrderedItems } from './modules/ingredientLists/addIngredients';
+
 
 
 addClassById("wrapper", styles.wrapper);
@@ -31,6 +32,7 @@ addClassById("orderButton", styles.orderButton);
 addClassById("orderButtonBg", styles.orderButtonBg);
 addClassById("ingredientsArea", styles.ingredientsArea);
 addClassById("ingredientsBackground", styles.ingredientsBackground);
+addClassById("ingredientsLists", styles.ingredientsLists);
 addClassById("orderAreaBg", styles.orderAreaBg);
 addClassById("headerColorizer", styles.headerColorizer);
 addClassById("buttonText", styles.buttonText);
@@ -46,6 +48,7 @@ addClassByClassName("ingredients", styles.ingredients);
 addClassByClassName("ingredientsBlock", styles.ingredientsBlock);
 addClassByClassName("indicators", styles.indicators);
 addClassByClassName("indicatorBg", styles.indicatorBg);
+addClassByClassName("orderedItemName", styles.orderedItemtName);
 
 
 imageBlock1.style.backgroundImage = image1;
@@ -63,4 +66,4 @@ imageBlock4.setAttribute('style', `background-image: url(${image4})`);
 logo.setAttribute('src', logoImage);
 
 
-showPizzaSlice();
+addIngredientsToOrderedItems();
