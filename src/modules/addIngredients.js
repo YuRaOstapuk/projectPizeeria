@@ -1,4 +1,6 @@
 import { showPizzaSlice } from "./showPizzaSlice";
+import styles from "../index.module.scss";
+import icon from "../assets/icon.png";
 
 export function addIngredientsToOrderedItems() {
     const allSelectedItems = [[], [], [], []];
@@ -9,21 +11,32 @@ export function addIngredientsToOrderedItems() {
   
     function updateOrderedItemsList(item, ingredientsListIndex) {
         const orderedItemsList = document.getElementById('orderedItemsList');
-        const clone = item.cloneNode(true);
-        
-        clone.style.fontSize = '16px'; 
-        clone.style.color = 'white'; 
-        clone.classList.add('roboto-font');
 
-        clone.addEventListener('click', (e) => {
-          e.target.remove();
+        const orderedItem = document.createElement('li');
+        orderedItemsList.appendChild(orderedItem);
+        orderedItem.className = styles.orderedItems;
+
+        const orderedItemText = document.createElement('span');
+        orderedItem.appendChild(orderedItemText);
+        orderedItemText.innerText = item.innerText;
+        orderedItemText.className = styles.orderedItemName;
+
+        const orderedItemButton = document.createElement('button');
+        orderedItem.appendChild(orderedItemButton);
+        orderedItemButton.className = styles.removeButton;
+
+        const orderedItemImg = document.createElement('img');
+        orderedItemButton.appendChild(orderedItemImg);
+        orderedItemImg.src = icon;
+        orderedItemImg.className = styles.removeButtonImg;
+
+        orderedItemButton.addEventListener('click', (e) => {
+          orderedItem.remove();
           item.style.color = null;
           allSelectedItems[ingredientsListIndex] = allSelectedItems[ingredientsListIndex].filter(a => a !== item);
           showPizzaSlice(allSelectedItems);
           showCursorPointers(allSelectedItems);
         });
-
-        orderedItemsList.appendChild(clone);
       }
   
     function handleClick(event) {
