@@ -4,7 +4,7 @@ import image1  from "./assets/pizzaTopLeft.png";
 import image2 from "./assets/pizzaTopRight.png";
 import image3 from "./assets/pizzaBottomLeft.png";
 import image4 from "./assets/pizzaBottomRight.png";
-// import icon from "./assets/icons8-trash-16.png";
+import icon from "./assets/icon.png";
 import addClassById from "./modules/addClassById";
 import addClassByClassName from "./modules/addClassByClassName.js";
 import fontBlack from "./assets/fonts/Roboto-Black.ttf";
@@ -40,6 +40,8 @@ addClassById("buttonText", styles.buttonText);
 addClassById("orderListWrapper", styles.orderListWrapper);
 addClassById("orderAreaBg", styles.orderAreaBg);
 addClassById("modal", styles.modal);
+addClassById("removeButton", styles.removeButton);
+addClassById("removeButtonImg", styles.removeButtonImg);
 
 addClassByClassName("orderedItems", styles.orderedItems);
 addClassByClassName("ingredientsTitles", styles.ingredientsTitles);
@@ -50,8 +52,7 @@ addClassByClassName("ingredientsBlock", styles.ingredientsBlock);
 addClassByClassName("indicators", styles.indicators);
 addClassByClassName("indicatorBg", styles.indicatorBg);
 addClassByClassName("orderedItemName", styles.orderedItemtName);
-addClassByClassName("removeButton", styles.removeButton);
-addClassByClassName("icon", styles.icon);
+// addClassByClassName("icon", styles.icon);
 
 
 imageBlock1.style.backgroundImage = image1;
@@ -67,6 +68,10 @@ imageBlock4.style.backgroundImage = image4;
 imageBlock4.setAttribute('style', `background-image: url(${image4})`);
 
 logo.setAttribute('src', logoImage);
+
+// removeButton.style.backgroundImage = icon;
+// removeButton.setAttribute('style', `background-image: url(${icon})`);
+removeButtonImg.src = icon;
 
 // icon.setAttribute('src', iconTrash);
 
