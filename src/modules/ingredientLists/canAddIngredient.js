@@ -6,9 +6,9 @@ function getMaxCount(ingredientsListIndex) {
   }
 }
 
-export function canAddItem(selectedItemsInList, ingredientsListIndex, item) {
+export function canAddIngredient(selectedIngredientsInList, ingredientsListIndex, ingredient) {
   const maxCount = getMaxCount(ingredientsListIndex);
   return (
-    selectedItemsInList.length < maxCount && !selectedItemsInList.includes(item)
+    selectedIngredientsInList.length < maxCount && !selectedIngredientsInList.includes(ingredient)
   );
 }

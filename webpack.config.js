@@ -9,6 +9,15 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'build')
     },
+    resolve: {
+        alias: {
+            "@src": path.resolve(__dirname, "src"),
+            "@assets": path.resolve(__dirname, "src/assets"),
+            "@fonts": path.resolve(__dirname, "src/assets/fonts"),
+            "@modules": path.resolve(__dirname, "src/modules"),
+            "@styles": path.resolve(__dirname, "src/styles"),
+       }
+    },
     devServer: {
         open: true,
         static: path.resolve(__dirname, 'build')

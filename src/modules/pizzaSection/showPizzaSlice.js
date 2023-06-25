@@ -1,4 +1,4 @@
-export function showPizzaSlice(allSelectedItems) {
+export function showPizzaSlice(allSelectedIngredients) {
   const imageBlocks = [
     document.getElementById("imageBlock1"),
     document.getElementById("imageBlock2"),
@@ -7,6 +7,6 @@ export function showPizzaSlice(allSelectedItems) {
   ];
 
   for (let i=0; i < 4; i++) {
-    imageBlocks[i].style.opacity = allSelectedItems[i].length === 0 ? 0.3 : 1;
+    imageBlocks[i].style.opacity = allSelectedIngredients[i].length === 0 ? 0.3 : 1;
   }
 }

@@ -1,3 +1,5 @@
+@import "@styles/styleVariables.scss";
+
 .orderListWrapper {
   width: 100%;
   height: 325px;
@@ -29,16 +31,16 @@
   letter-spacing: 0.05em;
   align-self: center;
 }
-.orderedItemsList {
+.selectedIngredientsList {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
   list-style-type: none;
   align-items: flex-start;
-  gap: 11px;
+  gap: 14px;
 }
-.orderedItems {
+.selectedIngredients {
   width: 100%;
   font-size: 16px;
   font-weight: 500;
@@ -48,7 +50,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.orderedItemName{
+.selectedIngredientName{
   font-size: 16px;
   font-weight: 500;
   cursor: default;
@@ -69,12 +71,12 @@
   aspect-ratio: 1;
 }
 .orderPrice {
-  width: 100%;
+  width: 77%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
 }
 .priceText {
   font-size: 18px;
