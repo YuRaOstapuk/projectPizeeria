@@ -4,6 +4,14 @@ import image from "./assets/pizzaLab_image.png";
 import addClassById from "./modules/addClassById";
 import addClassByClassName from "./modules/addClassByClassName.js";
 import * as font from "./assets/fonts/Roboto-Black.ttf";
+import {
+  getPriceByIngredient,
+  setupOrderPriceUpdate,
+} from "./priceElement/priceElement";
+// export  const INGREDIENTS_PRICE from "./priceElement"
+export { getPriceByIngredient } from "./priceElement/priceElement.js";
+export { updateOrderPrice } from "./priceElement/priceElement.js";
+export { setupOrderPriceUpdate } from "./priceElement/priceElement.js";
 
 addClassById("wrapper", styles.wrapper);
 addClassById("main", styles.main);
@@ -42,3 +50,6 @@ addClassByClassName("ingredients", styles.ingredients);
 addClassByClassName("ingredientsBlock", styles.ingredientsBlock);
 addClassByClassName("indicators", styles.indicators);
 addClassByClassName("indicatorBg", styles.indicatorBg);
+getPriceByIngredient("orderedItems", styles.priceValue);
+updateOrderPrice("orderedItems", styles.orderArea);
+setupOrderPriceUpdate("orderedItems", styles.orderArea);

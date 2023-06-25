@@ -1,161 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PizzaLab</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrapper">
+      <main id="main">
+        <div id="orderAreaBg"></div>
 
-        <main id="main">
+        <div id="orderArea">
+          <img id="logo" src="./assets/pizzaLab_logo.png" alt="logo" />
 
+          <div id="orderListWrapper">
+            <h2 id="orderListTitle">selected ingredients</h2>
 
-            <div id="orderAreaBg">
-                
+            <ul id="orderedItemsList">
+              <li class="orderedItems"></li>
+              <li class="orderedItems"></li>
+              <li class="orderedItems"></li>
+              <li class="orderedItems"></li>
+              <li class="orderedItems"></li>
+              <li class="orderedItems"></li>
+            </ul>
+
+            <div id="orderPrice">
+              <p id="priceText">total price</p>
+              <p id="priceValue">$</p>
             </div>
+          </div>
+        </div>
 
-            <div id="orderArea">
-                
-                <img id="logo" src="./assets/pizzaLab_logo.png" alt="logo">
+        <div id="mainContent">
+          <h1 id="mainHeader">
+            CREATE your <span id="headerColorizer">perfect</span> pizza
+          </h1>
 
-                <div id="orderListWrapper">
-                
+          <div id="mainImage">
+            <img id="image" src="assets/pizzaLab_image.png" alt="pizza image" />
 
-                    <h2 id="orderListTitle">selected ingredients</h2>
-
-                    <ul id="orderedItemsList">
-                        <li class="orderedItems" data-list="ingredientsList1"> ------  </li>
-
-                        <li class="orderedItems"></li>
-                        <li class="orderedItems"></li>
-                        <li class="orderedItems"></li>
-                        <li class="orderedItems"></li>
-                        <li class="orderedItems"></li>
-                        <li class="orderedItems"></li>
-                    </ul>
-                
-                
-                    <div id="orderPrice">
-                        <p id="priceText">total price</p>
-                        <p id="priceValue">$</p>
-                    </div>
-
-
-                </div>
-
+            <div id="coverBlocksWrapper">
+              <div id="coverBlock1"></div>
+              <div id="coverBlock2"></div>
+              <div id="coverBlock3"></div>
+              <div id="coverBlock4"></div>
             </div>
+          </div>
 
-            <div id="mainContent">
-
-                <h1 id="mainHeader">CREATE your <span id="headerColorizer">perfect</span> pizza</h1>
-
-                <div id="mainImage"> 
-
-                    <img id="image" src="assets/pizzaLab_image.png" alt="pizza image"></img>
-                   
-                    <div id="coverBlocksWrapper">
-                        <div id="coverBlock1"></div>
-                        <div id="coverBlock2"></div>
-                        <div id="coverBlock3"></div>
-                        <div id="coverBlock4"></div>
-                    </div>
-                    
-                </div>
-    
-                
-                <button id="orderButton">
-                    <div id="orderButtonBg">
-                        <p id="buttonText">order</p>
-                    </div>
-                </button>
-
+          <button id="orderButton">
+            <div id="orderButtonBg">
+              <p id="buttonText">order</p>
             </div>
+          </button>
+        </div>
+      </main>
 
-        </main>
+      <section id="ingredientsArea">
+        <div id="ingredientsBackground"></div>
 
-        <section id="ingredientsArea">
+        <div class="ingredientsBlock">
+          <div class="indicators">
+            <div class="indicatorBg"></div>
+          </div>
 
-            <div id="ingredientsBackground"></div>
+          <h3 class="ingredientsTitles">pizza bases</h3>
+          <hr class="titleDeviders" />
+          <ul class="ingredientsLists">
+            <li class="ingredients">
+              <span class="listMarkers">Thin crust</span>
+            </li>
+            <li class="ingredients">
+              <span class="listMarkers">Thic crust</span>
+            </li>
+            <li class="ingredients">
+              <span class="listMarkers">Stuffed crust</span>
+            </li>
+            <li class="ingredients">
+              <span class="listMarkers">Gluten-free</span>
+            </li>
+          </ul>
+        </div>
 
+        <div class="ingredientsBlock">
+          <div class="indicators">
+            <div class="indicatorBg"></div>
+          </div>
 
-            <div class="ingredientsBlock">
+          <h3 class="ingredientsTitles">toppings-1</h3>
+          <hr class="titleDeviders" />
+          <ul class="ingredientsLists">
+            <li class="ingredients">
+              <span class="listMarkers">Pepperoni</span>
+            </li>
+            <li class="ingredients">
+              <span class="listMarkers">Mushrooms</span>
+            </li>
+            <li class="ingredients">
+              <span class="listMarkers">Bell peppers</span>
+            </li>
+            <li class="ingredients">
+              <span class="listMarkers">Tomatoes</span>
+            </li>
+          </ul>
+        </div>
 
-                <div class="indicators">
-                    <div class="indicatorBg"></div>
-                </div>
+        <div class="ingredientsBlock">
+          <div class="indicators">
+            <div class="indicatorBg"></div>
+          </div>
 
-                <h3 class="ingredientsTitles">pizza bases</h3>
-                <hr class="titleDeviders">
-                <ul class="ingredientsLists">
-                    <li class="ingredients"><span class="listMarkers">Thin crust</span></li>
-                    <li class="ingredients"><span class="listMarkers">Thic crust</span></li>
-                    <li class="ingredients"><span class="listMarkers">Stuffed crust</span></li>
-                    <li class="ingredients"><span class="listMarkers">Gluten-free</span></li>
-                </ul>
+          <h3 class="ingredientsTitles">toppings-2</h3>
+          <hr class="titleDeviders" />
+          <ul class="ingredientsLists">
+            <li class="ingredients">
+              <span class="listMarkers">Mozzarella</span>
+            </li>
+            <li class="ingredients">
+              <span class="listMarkers">Parmesan</span>
+            </li>
+            <li class="ingredients"><span class="listMarkers">Olives</span></li>
+            <li class="ingredients"><span class="listMarkers">Garlic</span></li>
+          </ul>
+        </div>
 
-            </div>
+        <div class="ingredientsBlock">
+          <div class="indicators">
+            <div class="indicatorBg"></div>
+          </div>
 
-           
-
-            <div class="ingredientsBlock">
-
-                <div class="indicators">
-                    <div class="indicatorBg"></div>
-                </div>
-
-                <h3 class="ingredientsTitles">toppings-1</h3>
-                <hr class="titleDeviders">
-                <ul class="ingredientsLists">
-                    <li class="ingredients"><span class="listMarkers" >Pepperoni</span></li>
-                    <li class="ingredients"><span class="listMarkers">Mushrooms</span></li>
-                    <li class="ingredients"><span class="listMarkers">Bell peppers</span></li>
-                    <li class="ingredients"><span class="listMarkers">Tomatoes</span></li>
-                </ul>
-
-            </div>
-
-            
-
-            <div class="ingredientsBlock">
-
-                <div class="indicators">
-                    <div class="indicatorBg"></div>
-                </div>
-
-                <h3 class="ingredientsTitles">toppings-2</h3>
-                <hr class="titleDeviders">
-                <ul class="ingredientsLists">
-                    <li class="ingredients"><span class="listMarkers">Mozzarella</span></li>
-                    <li class="ingredients"><span class="listMarkers">Parmesan</span></li>
-                    <li class="ingredients"><span class="listMarkers">Olives</span></li>
-                    <li class="ingredients"><span class="listMarkers">Garlic</span></li>
-                </ul>
-
-            </div>
-
-
-            
-            <div class="ingredientsBlock">
-
-                <div class="indicators">
-                    <div class="indicatorBg"></div>
-                </div>
-
-                <h3 class="ingredientsTitles">sauses</h3>
-                <hr class="titleDeviders">
-                <ul class="ingredientsLists">
-                    <li class="ingredients"><span class="listMarkers">Marinara</span></li>
-                    <li class="ingredients"><span class="listMarkers">BBQ</span></li>
-                    <li class="ingredients"><span class="listMarkers">Pesto</span></li>
-                    <li class="ingredients"><span class="listMarkers">Alfredo</span></li>
-                </ul>
-
-            </div>
-
-        </section>
-
+          <h3 class="ingredientsTitles">sauses</h3>
+          <hr class="titleDeviders" />
+          <ul class="ingredientsLists">
+            <li class="ingredients">
+              <span class="listMarkers">Marinara</span>
+            </li>
+            <li class="ingredients"><span class="listMarkers">BBQ</span></li>
+            <li class="ingredients"><span class="listMarkers">Pesto</span></li>
+            <li class="ingredients">
+              <span class="listMarkers">Alfredo</span>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
-  
-</body>
+  </body>
 </html>
