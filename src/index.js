@@ -77,4 +77,4 @@ const modal = new Modal();
         You have successfully assembled your pizza. You need to pay ${totalPrice}
         `);
       }
-    }
+    };

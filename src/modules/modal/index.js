@@ -15,4 +15,4 @@ export default class Modal {
   removeModal() {
     this.anchor.remove();
   }
-}
+};
