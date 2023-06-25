@@ -1,8 +1,7 @@
 import styles from "./pizzaSection.module.scss";
 
-
 import addClassById from "@modules/addingClasses/addClassById";
-//import addClassByClassName from "@modules/addingClasses/addClassByClassName";
+
 
 import image1  from "@assets/pizzaTopLeft.png";
 import image2 from "@assets/pizzaTopRight.png";

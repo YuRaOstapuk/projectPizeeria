@@ -23,15 +23,7 @@
 
                     <h2 id="orderListTitle">selected ingredients</h2>
 
-                    <ul id="selectedIngredientsList">
-                        <!-- <li class="selectedIngredients">
-                            <span class="selectedIngredientName">ingredient1</span>
-                            <button id="removeButton">
-                                <img id="removeButtonImg" alt="">
-                            </button>
-                        </li> -->
-
-                    </ul>
+                    <ul id="selectedIngredientsList"></ul>
                 
                 
                     <div id="orderPrice">
@@ -145,10 +137,16 @@
                 </ul>
 
             </div>
-
         </section>
-
+        <div id="modalWindow" >
+            <div id="modalContent">
+                <p>Congratulations on your pizza order! Prepare to be blown away by the extraordinary flavors that await you.</p>
+                <p>Your order total price is <span id="priceInModalValue">$0</span>.</p>
+            </div>
+            <button id="modalButton">
+                <p id="closeModalText">Ok</p>
+            </button>
+        </div> 
     </div>
-  
 </body>
 </html>

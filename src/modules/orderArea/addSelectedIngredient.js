@@ -11,7 +11,7 @@ export function addSelectedIngredient(ingredient, allSelectedIngredients, ingred
 
   const selectedIngredientText = document.createElement("span");
   selectedIngredient.appendChild(selectedIngredientText);
-  selectedIngredientText.innerText = ingredient.innerText;
+  selectedIngredientText.textContent = ingredient.textContent;
   selectedIngredientText.className = styles.selectedIngredientName;
 
   const selectedIngredientButton = document.createElement("button");

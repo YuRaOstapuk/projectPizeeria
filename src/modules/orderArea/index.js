@@ -16,3 +16,4 @@ addClassById("orderListWrapper", styles.orderListWrapper);
 addClassByClassName("selectedIngredients", styles.selectedIngredients);
 addClassByClassName("selectedIngredientName", styles.selectedIngredienttName);
 logo.setAttribute('src', logoImage);
+
