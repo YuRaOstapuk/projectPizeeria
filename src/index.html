@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PizzaLab</title>
+    <title>PizzaBox</title>
 </head>
 <body>
     <div id="wrapper">
 
         <main id="main">
 
-            <div id="orderAreaBg">
-                
-            </div>
+            <header id="mainHeader">
 
-            <div id="orderArea">
-                
                 <img id="logo" alt="logo">
+
+                <h1 id="title">CREATE YOUR PERFECT PIZZA</h1>
+
+            </header>
+
+            <section id="orderArea">
+
+
+                <img id="orderAreaImage" src="" alt="pizza box">
+                
 
                 <div id="orderListWrapper">
                 
@@ -34,110 +40,113 @@
 
                 </div>
 
-            </div>
+            </section>
 
-            <div id="mainContent">
-
-                <h1 id="mainHeader">CREATE your <span id="headerColorizer">perfect</span> pizza</h1>
-
-                <div id="mainImage"> 
-
-                    <div id="imageBlock1"></div>
-                    <div id="imageBlock2"></div>
-                    <div id="imageBlock3"></div>
-                    <div id="imageBlock4"></div>
-                    
-                </div>
-
-                <button disabled id="orderButton">
-                    <div id="orderButtonBg">
-                        <p id="buttonText">order</p>
+            <section id="ingredientsArea">
+    
+    
+                <div class="ingredientsBlock">
+    
+                    <div class="markers">
+                        
                     </div>
-                </button>
+    
+                    <h3 class="ingredientsTitles">pizza bases</h3>
+                    <hr class="titleDeviders">
+                    <ul class="ingredientsLists">
+                        <li class="ingredients">Thin crust</li>
+                        <li class="ingredients">Thick crust</li>
+                        <li class="ingredients">Stuffed crust</li>
+                        <li class="ingredients">Gluten-free</li>
+                    </ul>
+    
+                </div>
+    
+               
+    
+                <div class="ingredientsBlock">
+    
+                    <div class="markers">
+                        
+                    </div>
+    
+                    <h3 class="ingredientsTitles">Meat</h3>
+                    <hr class="titleDeviders">
+                    <ul class="ingredientsLists">
+                        <li class="ingredients">Pepperoni</li>
+                        <li class="ingredients">Becon</li>
+                        <li class="ingredients">Prosciutto</li>
+                        <li class="ingredients">Salami</li>
+                    </ul>
+    
+                </div>
+    
+                
+    
+                <div class="ingredientsBlock">
+    
+                    <div class="markers">
+                        
+                    </div>
+    
+                    <h3 class="ingredientsTitles">Vegetables</h3>
+                    <hr class="titleDeviders">
+                    <ul class="ingredientsLists">
+                        <li class="ingredients">Tomatoes</li>
+                        <li class="ingredients">Bell peppers</li>
+                        <li class="ingredients">Mushrooms</li>
+                        <li class="ingredients">Olives</li>
+                    </ul>
+    
+                </div>
+    
+    
+                
+                <div class="ingredientsBlock">
+    
+                    <div class="markers">
+                        
+                    </div>
+    
+                    <h3 class="ingredientsTitles">Sauses</h3>
+                    <hr class="titleDeviders">
+                    <ul class="ingredientsLists">
+                        <li class="ingredients">Marinara</li>
+                        <li class="ingredients">BBQ</li>
+                        <li class="ingredients">Pesto</li>
+                        <li class="ingredients">Alfredo</li>
+                    </ul>
+    
+                </div>
+            </section>
 
-            </div>
 
         </main>
 
-        <section id="ingredientsArea">
 
-            <div id="ingredientsBackground"></div>
-
-
-            <div class="ingredientsBlock">
-
-                <div class="indicators">
-                    <div class="indicatorBg"></div>
-                </div>
-
-                <h3 class="ingredientsTitles">pizza bases</h3>
-                <hr class="titleDeviders">
-                <ul class="ingredientsLists">
-                    <li class="ingredients">Thin crust</li>
-                    <li class="ingredients">Thick crust</li>
-                    <li class="ingredients">Stuffed crust</li>
-                    <li class="ingredients">Gluten-free</li>
-                </ul>
-
-            </div>
-
-           
-
-            <div class="ingredientsBlock">
-
-                <div class="indicators">
-                    <div class="indicatorBg"></div>
-                </div>
-
-                <h3 class="ingredientsTitles">toppings-1</h3>
-                <hr class="titleDeviders">
-                <ul class="ingredientsLists">
-                    <li class="ingredients">Pepperoni</li>
-                    <li class="ingredients">Mushrooms</li>
-                    <li class="ingredients">Bell peppers</li>
-                    <li class="ingredients">Tomatoes</li>
-                </ul>
-
-            </div>
-
+        <section id="pizzaSection">
             
+                <div id="pizzaSectionBg">
 
-            <div class="ingredientsBlock">
+                     <div id="pizzaImage"> 
 
-                <div class="indicators">
-                    <div class="indicatorBg"></div>
+                        <div id="imageBlock1"></div>
+                        <div id="imageBlock2"></div>
+                        <div id="imageBlock3"></div>
+                        <div id="imageBlock4"></div>
+                
+                    </div>
+
                 </div>
 
-                <h3 class="ingredientsTitles">toppings-2</h3>
-                <hr class="titleDeviders">
-                <ul class="ingredientsLists">
-                    <li class="ingredients">Mozzarella</li>
-                    <li class="ingredients">Parmesan</li>
-                    <li class="ingredients">Olives</li>
-                    <li class="ingredients">Garlic</li>
-                </ul>
 
-            </div>
-
-
-            
-            <div class="ingredientsBlock">
-
-                <div class="indicators">
-                    <div class="indicatorBg"></div>
+            <button disabled id="orderButton">
+                    <p id="buttonText">order</p>
                 </div>
+            </button>
 
-                <h3 class="ingredientsTitles">sauses</h3>
-                <hr class="titleDeviders">
-                <ul class="ingredientsLists">
-                    <li class="ingredients">Marinara</li>
-                    <li class="ingredients">BBQ</li>
-                    <li class="ingredients">Pesto</li>
-                    <li class="ingredients">Alfredo</li>
-                </ul>
-
-            </div>
         </section>
+
         <div id="modalWindow" >
             <div id="modalContent">
                 <p>Congratulations on your pizza order! Prepare to be blown away by the extraordinary flavors that await you.</p>
@@ -147,6 +156,7 @@
                 <p id="closeModalText">Ok</p>
             </button>
         </div> 
+
     </div>
 </body>
 </html>

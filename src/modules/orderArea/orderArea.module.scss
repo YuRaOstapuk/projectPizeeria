@@ -1,34 +1,31 @@
-@import "@styles/styleVariables.scss";
+@import "@styles/styleVariables.module.scss";
 
+
+.orderArea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.orderAreaImage{
+  width: 35%;
+}
 .orderListWrapper {
   width: 100%;
-  height: 325px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
   gap: 20px;
-}
-.orderAreaBg {
-  background-color: $blue;
-  width: 37%;
-  height: 113.8%;
-  position: absolute;
-  transform: translate(0, -65px);
-  z-index: 2;
-}
-.orderArea {
-  width: 39%;
   position: relative;
-  z-index: 3;
-}
-.logo {
-  width: 100%;
+  // border: 1px dashed $beige;
+  // border-radius: 5px;
+ 
 }
 .orderListTitle {
-  font-size: 1.3em;
-  color: $white;
+  font-size: 20px;
+  font-weight: 400;
+  color: $beige;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 4px;
   align-self: center;
 }
 .selectedIngredientsList {
@@ -42,9 +39,9 @@
 }
 .selectedIngredients {
   width: 100%;
-  font-size: 16px;
-  font-weight: 500;
-  color: $white;
+  font-size: 14px;
+  color: $beige;
+  text-transform: uppercase;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -52,14 +49,14 @@
 }
 .selectedIngredientName{
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   cursor: default;
 }
 .removeButton{
   width: 20px;
   height: 20px;
-  border: 1px solid $white;
-  border-radius: 20%;
+  border: 1px solid $beige;
+  border-radius: 50%;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -67,11 +64,11 @@
   cursor: pointer;
 }
 .removeButtonImg{
-  width: 13px;
+  width: 12px;
   aspect-ratio: 1;
 }
 .orderPrice {
-  width: 77%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,13 +77,13 @@
 }
 .priceText {
   font-size: 18px;
-  font-weight: 600;
-  color: $white;
+  font-weight: 500;
+  color: $beige;
   text-transform: uppercase;
 }
 .priceValue {
   font-size: 20px;
-  font-weight: 600;
-  color: $white;
+  font-weight: 500;
+  color: $beige;
   text-transform: uppercase;
 }

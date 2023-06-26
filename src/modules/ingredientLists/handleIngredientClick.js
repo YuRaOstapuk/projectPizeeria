@@ -23,7 +23,7 @@ export function handleIngredientClick(ingredient, allSelectedIngredients) {
         allSelectedIngredients,
         ingredientsListIndex
       );
-      ingredient.style.color = "rgba(255, 0, 0, 1)";
+      ingredient.style.color = "rgba(133, 165, 0, 1)";
       updateUI(allSelectedIngredients);
     }
   }

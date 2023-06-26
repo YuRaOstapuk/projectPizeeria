@@ -7,6 +7,6 @@ export function showPizzaSlice(allSelectedIngredients) {
   ];
 
   for (let i=0; i < 4; i++) {
-    imageBlocks[i].style.opacity = allSelectedIngredients[i].length === 0 ? 0.3 : 1;
+    imageBlocks[i].style.opacity = allSelectedIngredients[i].length === 0 ? 0 : 1;
   }
 }

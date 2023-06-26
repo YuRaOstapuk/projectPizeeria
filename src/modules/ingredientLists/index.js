@@ -6,15 +6,13 @@ import { showCursorPointers } from "./showCursorPointers";
 import { handleIngredientClick } from "./handleIngredientClick";
 
 addClassById("ingredientsArea", styles.ingredientsArea);
-addClassById("ingredientsBackground", styles.ingredientsBackground);
 addClassById("ingredientsLists", styles.ingredientsLists);
 addClassByClassName("ingredientsTitles", styles.ingredientsTitles);
 addClassByClassName("titleDeviders", styles.titleDeviders);
 addClassByClassName("ingredientsLists", styles.ingredientsLists);
 addClassByClassName("ingredients", styles.ingredients);
 addClassByClassName("ingredientsBlock", styles.ingredientsBlock);
-addClassByClassName("indicators", styles.indicators);
-addClassByClassName("indicatorBg", styles.indicatorBg);
+addClassByClassName("markers", styles.markers);
 
 export function setupIngredientsLists() {
   const allSelectedIngredients = [[], [], [], []];
@@ -25,6 +23,6 @@ export function setupIngredientsLists() {
       li.addEventListener("click", e => handleIngredientClick(e.target, allSelectedIngredients))
     );
   }
-  
+
   showCursorPointers(allSelectedIngredients);
 }
