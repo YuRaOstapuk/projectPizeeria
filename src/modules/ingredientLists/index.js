@@ -8,11 +8,11 @@ import { handleIngredientClick } from "./handleIngredientClick";
 addClassById("ingredientsArea", styles.ingredientsArea);
 addClassById("ingredientsLists", styles.ingredientsLists);
 addClassByClassName("ingredientsTitles", styles.ingredientsTitles);
-addClassByClassName("titleDeviders", styles.titleDeviders);
 addClassByClassName("ingredientsLists", styles.ingredientsLists);
 addClassByClassName("ingredients", styles.ingredients);
 addClassByClassName("ingredientsBlock", styles.ingredientsBlock);
 addClassByClassName("markers", styles.markers);
+
 
 export function setupIngredientsLists() {
   const allSelectedIngredients = [[], [], [], []];

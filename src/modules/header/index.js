@@ -7,4 +7,5 @@ addClassById("mainHeader", styles.mainHeader);
 addClassById("mainHeader", styles.mainHeader);
 addClassById("logo", styles.logo);
 addClassById("title", styles.title);
+addClassById("titleColorizer", styles.titleColorizer);
 logo.setAttribute('src', logoImage);

@@ -14,14 +14,17 @@
 
                 <img id="logo" alt="logo">
 
-                <h1 id="title">CREATE YOUR PERFECT PIZZA</h1>
+                <h1 id="title">CREATE YOUR <span id="titleColorizer">PERFECT</span> PIZZA</h1>
 
             </header>
 
             <section id="orderArea">
 
 
-                <img id="orderAreaImage" src="" alt="pizza box">
+                <div id="pizzaSliceLeft"></div>
+        
+
+                <div id="orderAreaImage"></div>
                 
 
                 <div id="orderListWrapper">
@@ -47,12 +50,12 @@
     
                 <div class="ingredientsBlock">
     
-                    <div class="markers">
+                    <div class="markers" id="marker1">
                         
                     </div>
     
                     <h3 class="ingredientsTitles">pizza bases</h3>
-                    <hr class="titleDeviders">
+                
                     <ul class="ingredientsLists">
                         <li class="ingredients">Thin crust</li>
                         <li class="ingredients">Thick crust</li>
@@ -66,12 +69,12 @@
     
                 <div class="ingredientsBlock">
     
-                    <div class="markers">
+                    <div class="markers" id="marker2">
                         
                     </div>
     
                     <h3 class="ingredientsTitles">Meat</h3>
-                    <hr class="titleDeviders">
+                
                     <ul class="ingredientsLists">
                         <li class="ingredients">Pepperoni</li>
                         <li class="ingredients">Becon</li>
@@ -85,12 +88,12 @@
     
                 <div class="ingredientsBlock">
     
-                    <div class="markers">
+                    <div class="markers" id="marker3">
                         
                     </div>
     
                     <h3 class="ingredientsTitles">Vegetables</h3>
-                    <hr class="titleDeviders">
+                
                     <ul class="ingredientsLists">
                         <li class="ingredients">Tomatoes</li>
                         <li class="ingredients">Bell peppers</li>
@@ -104,12 +107,12 @@
                 
                 <div class="ingredientsBlock">
     
-                    <div class="markers">
+                    <div class="markers" id="marker4">
                         
                     </div>
     
                     <h3 class="ingredientsTitles">Sauses</h3>
-                    <hr class="titleDeviders">
+                
                     <ul class="ingredientsLists">
                         <li class="ingredients">Marinara</li>
                         <li class="ingredients">BBQ</li>
@@ -125,7 +128,7 @@
 
 
         <section id="pizzaSection">
-            
+
                 <div id="pizzaSectionBg">
 
                      <div id="pizzaImage"> 
@@ -140,9 +143,7 @@
                 </div>
 
 
-            <button disabled id="orderButton">
-                    <p id="buttonText">order</p>
-                </div>
+            <button disabled id="orderButton">order</div>
             </button>
 
         </section>

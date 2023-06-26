@@ -18,7 +18,6 @@ addClassById("imageBlock2", styles.imageBlock2);
 addClassById("imageBlock3", styles.imageBlock3);
 addClassById("imageBlock4", styles.imageBlock4);
 addClassById("orderButton", styles.orderButton);
-addClassById("buttonText", styles.buttonText);
 addClassById("pizzaSectionBg", styles.pizzaSectionBg)
 imageBlock1.style.backgroundImage = image1;
 imageBlock1.setAttribute('style', `background-image: url(${image1})`);

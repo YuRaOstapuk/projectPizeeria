@@ -2,32 +2,39 @@
 
 .modalWindow{
     width: 380px;
-    height: 200px;
-    background-color: $beige;
-    // border: 4px solid $golden-sandy;
+    height: 250px;
+    background-color: $black;
     padding: 20px;
     position: fixed;
     z-index: 5;
-    top: 30px;
-    transform: translate(0, 30px);
+    top: 22%;
+    left: 42%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid $beige;
 }
 .modalContent{
-    font-size: 16px;
-    font-weight: 700;
-    // color: $blue;
-    line-height: 140%;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $beige;
+    line-height: 200%;
     text-align: justify;
 }
 .modalButton{
-    width: 130px;
+    width: 180px;
     height: 30px;
-    // border: 3px solid $blue;
+    border: 2px solid $beige;
+    background-color: $beige;
+    border-radius: 50px;
 }
 .closeModalText{
-    font-size: 14px;
-    // color: $blue;
+    font-size: 16px;
+    font-weight: 600;
+    color: $black;
+    text-transform: uppercase;
 }

@@ -1,3 +1,5 @@
+import styles from "@modules/pizzaSection/pizzaSection.module.scss";
+
 export function setOrderButton(allSelectedIngredients) {
   const button = document.getElementById("orderButton");
 
@@ -5,7 +7,10 @@ export function setOrderButton(allSelectedIngredients) {
     (selectedIngredientsInList) => selectedIngredientsInList.length > 0
   );
 
-  button.style.opacity = isAllSelected ? 1 : 0.3;
-  button.style.cursor = isAllSelected ? "pointer" : "default";
   button.disabled = !isAllSelected;
+  if (isAllSelected) {
+    button.classList.add(styles.buttonEnabled)
+  } else {
+    button.classList.remove(styles.buttonEnabled)
+  }
 }
