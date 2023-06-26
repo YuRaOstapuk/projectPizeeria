@@ -23,20 +23,12 @@
 
                     <h2 id="orderListTitle">selected ingredients</h2>
 
-                    <ul id="orderedItemsList">
-                        <!-- <li class="orderedItems">
-                            <span class="orderedItemName">ingredient1</span>
-                            <button id="removeButton">
-                                <img id="removeButtonImg" alt="">
-                            </button>
-                        </li> -->
-
-                    </ul>
+                    <ul id="selectedIngredientsList"></ul>
                 
                 
                     <div id="orderPrice">
                         <p id="priceText">total price</p>
-                        <p id="priceValue"></p>
+                        <p id="priceValue">$0</p>
                     </div>
 
 
@@ -57,7 +49,7 @@
                     
                 </div>
 
-                <button id="orderButton">
+                <button disabled id="orderButton">
                     <div id="orderButtonBg">
                         <p id="buttonText">order</p>
                     </div>
@@ -80,7 +72,7 @@
 
                 <h3 class="ingredientsTitles">pizza bases</h3>
                 <hr class="titleDeviders">
-                <ul id="ingredientsList1" class="ingredientsLists">
+                <ul class="ingredientsLists">
                     <li class="ingredients">Thin crust</li>
                     <li class="ingredients">Thick crust</li>
                     <li class="ingredients">Stuffed crust</li>
@@ -99,7 +91,7 @@
 
                 <h3 class="ingredientsTitles">toppings-1</h3>
                 <hr class="titleDeviders">
-                <ul id="ingredientsList2" class="ingredientsLists">
+                <ul class="ingredientsLists">
                     <li class="ingredients">Pepperoni</li>
                     <li class="ingredients">Mushrooms</li>
                     <li class="ingredients">Bell peppers</li>
@@ -118,7 +110,7 @@
 
                 <h3 class="ingredientsTitles">toppings-2</h3>
                 <hr class="titleDeviders">
-                <ul id="ingredientsList3" class="ingredientsLists">
+                <ul class="ingredientsLists">
                     <li class="ingredients">Mozzarella</li>
                     <li class="ingredients">Parmesan</li>
                     <li class="ingredients">Olives</li>
@@ -137,7 +129,7 @@
 
                 <h3 class="ingredientsTitles">sauses</h3>
                 <hr class="titleDeviders">
-                <ul id="ingredientsList4" class="ingredientsLists">
+                <ul class="ingredientsLists">
                     <li class="ingredients">Marinara</li>
                     <li class="ingredients">BBQ</li>
                     <li class="ingredients">Pesto</li>
@@ -145,10 +137,16 @@
                 </ul>
 
             </div>
-
         </section>
-
+        <div id="modalWindow" >
+            <div id="modalContent">
+                <p>Congratulations on your pizza order! Prepare to be blown away by the extraordinary flavors that await you.</p>
+                <p>Your order total price is <span id="priceInModalValue">$0</span>.</p>
+            </div>
+            <button id="modalButton">
+                <p id="closeModalText">Ok</p>
+            </button>
+        </div> 
     </div>
-  
 </body>
 </html>

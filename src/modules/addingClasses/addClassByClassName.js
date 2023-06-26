@@ -7,5 +7,4 @@ function addClassByClassName(className, targetClass) {
     }
   }
   
-
   export default addClassByClassName;
