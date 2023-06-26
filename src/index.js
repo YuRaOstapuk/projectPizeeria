@@ -67,3 +67,14 @@ logo.setAttribute('src', logoImage);
 
 
 addIngredientsToOrderedItems();
+
+const modal = new Modal();
+    
+    function orderedSuccesfully() {
+      if (modal) {
+        // не могу разобраться какая функция отвечает за успешное создание заказа при клике на кнопку
+        modal.showModal(`
+        You have successfully assembled your pizza. You need to pay ${totalPrice}
+        `);
+      }
+    }
