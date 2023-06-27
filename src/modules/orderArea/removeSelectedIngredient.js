@@ -6,6 +6,9 @@ export function removeSelectedIngredient(
     allSelectedIngredients,
     ingredientsListIndex
   ) {
+    if (document.getElementById('modalWindow')) {
+      return;
+    }
     selectedIngredient.remove();
     ingredient.style.color = null;
     allSelectedIngredients[ingredientsListIndex] = allSelectedIngredients[

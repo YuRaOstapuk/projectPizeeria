@@ -11,7 +11,6 @@ addClassByClassName("ingredientsTitles", styles.ingredientsTitles);
 addClassByClassName("ingredientsLists", styles.ingredientsLists);
 addClassByClassName("ingredients", styles.ingredients);
 addClassByClassName("ingredientsBlock", styles.ingredientsBlock);
-addClassByClassName("markers", styles.markers);
 
 
 export function setupIngredientsLists() {

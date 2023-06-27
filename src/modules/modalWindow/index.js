@@ -23,5 +23,6 @@ orderButton.addEventListener('click', () => {
     orderButton.classList.remove(styles2.buttonEnabled);
 });
 
-modalButton.addEventListener('click', () => modalWindow.remove());
+modalButton.addEventListener('click', () => location.reload());
+
 

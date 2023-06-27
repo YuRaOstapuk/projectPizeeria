@@ -1,10 +1,7 @@
 import styles from "./orderArea.module.scss";
 import addClassById from "@modules/addingClasses/addClassById";
 import addClassByClassName from "@modules/addingClasses/addClassByClassName";
-// import logoImage from "@assets/logo.png";
 import pizzaSlice from "@assets/pizzaSliceLeft.png";
-
-
 import pizzaInBoxImage from "@assets/pizzaBox1.png";
 
 addClassById("orderArea", styles.orderArea);

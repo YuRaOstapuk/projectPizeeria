@@ -3,6 +3,9 @@ import { addSelectedIngredient } from "@modules/orderArea/addSelectedIngredient"
 import { canAddIngredient } from "./canAddIngredient";
 
 export function handleIngredientClick(ingredient, allSelectedIngredients) {
+    if (document.getElementById('modalWindow')) {
+      return;
+    }
     const list = ingredient.parentElement;
     const lists = document.getElementsByClassName("ingredientsLists");
     const ingredientsListIndex = [...lists].indexOf(list);
