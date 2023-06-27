@@ -2,8 +2,8 @@ import styles from "./ingredients.module.scss";
 import addClassById from "@modules/addingClasses/addClassById";
 import addClassByClassName from "@modules/addingClasses/addClassByClassName";
 
-import { showCursorPointers } from "./showCursorPointers";
 import { handleIngredientClick } from "./handleIngredientClick";
+import {updateUI} from "@modules/updateUI/updateUI";
 
 addClassById("ingredientsArea", styles.ingredientsArea);
 addClassById("ingredientsLists", styles.ingredientsLists);
@@ -23,5 +23,5 @@ export function setupIngredientsLists() {
     );
   }
 
-  showCursorPointers(allSelectedIngredients);
+ updateUI(allSelectedIngredients);
 }
