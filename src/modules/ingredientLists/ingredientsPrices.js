@@ -4,7 +4,7 @@ export const ingredientsPrices = {
     "Stuffed crust" : 5,
     "Gluten-free" : 4,
     "Pepperoni" : 1.25,
-    "Becon" : 1,
+    "Bacon" : 1,
     "Prosciutto" : 1.7,
     "Salami" : 1,
     "Tomatoes" : 1.2,
