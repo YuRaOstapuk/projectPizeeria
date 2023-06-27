@@ -1,4 +1,5 @@
 import styles from "./modalWindow.module.scss";
+import styles2 from "@modules/pizzaSection/pizzaSection.module.scss";
 import addClassById from "@modules/addingClasses/addClassById";
 
 addClassById("modalWindow", styles.modalWindow);
@@ -18,7 +19,10 @@ modalWindow.remove();
 orderButton.addEventListener('click', () => {
     priceInModalValue.textContent = priceValue.textContent;
     wrapper.appendChild(modalWindow);
+    orderButton.disabled = true;
+    orderButton.classList.remove(styles2.buttonEnabled);
 });
 
-modalButton.addEventListener('click', () => modalWindow.remove());
+modalButton.addEventListener('click', () => location.reload());
+
 

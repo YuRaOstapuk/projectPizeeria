@@ -1,67 +1,42 @@
-@import "@styles/styleVariables.scss";
+@import "@styles/styleVariables.module.scss";
 
 .ingredientsArea {
-  width: 80%;
-  height: 230px;
+  width: 100%;
+  height: 29%;
   display: flex;
-  justify-content: space-around;
-}
-.ingredientsBackground {
-  background-color: $blue;
-  height: 90px;
-  width: 80%;
-  position: absolute;
-  transform: translate(0, 60%);
-  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .ingredientsBlock {
-  width: 150px;
-  height: 200px;
-  background-color: $white;
-  z-index: 3;
-  border-bottom: 4px solid $blue;
-  border-right: 4px solid $blue;
+  width: 180px;
+  height: 180px;
   padding: 23px 15px;
+  border: 1px solid $beige;
+  background-color: $black;
   position: relative;
 }
 .ingredientsTitles {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   height: 30px;
-  color: $blue;
+  color: $beige;
   text-transform: uppercase;
+  letter-spacing: 2px;
   text-align: center;
-}
-.titleDeviders {
-  border: 2px solid $red;
-  margin-bottom: 10px;
+  border-bottom: 2px dashed $beige;
+  margin-bottom: 13px;
 }
 .ingredients {
-  color: $blue;
-  font-size: 15px;
-  font-weight: 600;
+  color: $beige;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
   line-height: 200%;
-  margin-left: 15px;
-}
-.indicators {
-  width: 35px;
-  height: 35px;
-  background-color: $white;
-  border: 3.5px solid $blue;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-30px, -37px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  letter-spacing: 2px;
 }
 .ingredientsLists{
   list-style-type: none;
   text-align: left;
 }
-.indicatorBg {
-  width: 75%;
-  height: 75%;
-  background-color: $golden-sandy;
-  border-radius: 50%;
-}
+

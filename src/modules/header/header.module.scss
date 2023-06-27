@@ -1,0 +1,24 @@
+@import "@styles/styleVariables.module.scss";
+
+
+.mainHeader{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    align-items: center;
+}
+.logo {
+   height: 100%;
+}
+.title{
+    font-size: 32px;
+    font-weight: 500;
+    color: $beige;
+    letter-spacing: 4px;
+    // margin-top: 23px;
+}
+.titleColorizer{
+    color: $red;
+}
